@@ -1,0 +1,3 @@
+F:/FFmpeg/SamychenLive/SamychenLive/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/live.dir
+F:/FFmpeg/SamychenLive/SamychenLive/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
+F:/FFmpeg/SamychenLive/SamychenLive/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir

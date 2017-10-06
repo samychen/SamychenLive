@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="checkable_menu" type="id">菜单</item>
+</resources>

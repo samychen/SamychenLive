@@ -1,0 +1,102 @@
+
+{
+	"buildFiles" : [ "F:/FFmpeg/SamychenLive/SamychenLive/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"F:\\ProgramFile\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\.externalNativeBuild\\cmake\\debug\\armeabi --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"avcodec-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "avcodec",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavcodec.a",
+			"toolchain" : "3025965813"
+		},
+		"avfilter-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "avfilter",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavfilter.a",
+			"toolchain" : "3025965813"
+		},
+		"avformat-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "avformat",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavformat.a",
+			"toolchain" : "3025965813"
+		},
+		"avutil-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "avutil",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavutil.a",
+			"toolchain" : "3025965813"
+		},
+		"live-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "live",
+			"buildCommand" : "F:\\ProgramFile\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\.externalNativeBuild\\cmake\\debug\\armeabi --target live",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=F:/ProgramFile/Android/sdk/ndk-bundle/sysroot  -Dlive_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem F:/ProgramFile/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=19 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "F:/FFmpeg/SamychenLive/SamychenLive/app/src/main/cpp/live.cpp",
+					"workingDirectory" : "F:/FFmpeg/SamychenLive/SamychenLive/app/.externalNativeBuild/cmake/debug/armeabi"
+				}
+			],
+			"output" : "F:/FFmpeg/SamychenLive/SamychenLive/jniLibs/armeabi/liblive.so",
+			"toolchain" : "3025965813"
+		},
+		"postproc-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "postproc",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libpostproc.a",
+			"toolchain" : "3025965813"
+		},
+		"swresample-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "swresample",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libswresample.a",
+			"toolchain" : "3025965813"
+		},
+		"swscale-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "swscale",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libswscale.a",
+			"toolchain" : "3025965813"
+		},
+		"x264-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "x264",
+			"buildType" : "debug",
+			"output" : "../../../../src/main/jniLibs/armeabi/libx264.a",
+			"toolchain" : "3025965813"
+		}
+	},
+	"toolchains" : 
+	{
+		"3025965813" : 
+		{
+			"cCompilerExecutable" : "F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

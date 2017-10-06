@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.CAMERA
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:7:5-64
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.INTERNET
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:8:22-64
+application
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:9:5-25:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\dd094a155c232e942bdf0896eeeb04aa254293bb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\670508f056662f61d1db6e95ed7f8b1694452c7b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\90a2d3b5bd7b18b9467d1c3c00d19231dedd37a4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\cde2ef7041e9e4d03a6f6936d48ce4c290b8c337\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\1ecc8f4c6809f07dde99efe58f54c8c8af0b8fa5\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7d3fa2514c2bf0141f5ca053c03817f382829de\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\e341204a27c903e9321c92d48499093c537eeabf\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\3257ef9d1e05bc6cc7173da2b2e2de98b8a5768b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\46ebef630933ab15679a29cffc75082da5752b6e\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:12:9-41
+	android:supportsRtl
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:14:9-35
+	android:roundIcon
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:13:9-54
+	android:allowBackup
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.gracefulengineer.samychen.MainActivity
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.gracefulengineer.samychen.LiveActivity
+ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:23:9-24:61
+	android:screenOrientation
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml:23:19-47
+uses-sdk
+INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\dd094a155c232e942bdf0896eeeb04aa254293bb\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\670508f056662f61d1db6e95ed7f8b1694452c7b\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\90a2d3b5bd7b18b9467d1c3c00d19231dedd37a4\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\cde2ef7041e9e4d03a6f6936d48ce4c290b8c337\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\1ecc8f4c6809f07dde99efe58f54c8c8af0b8fa5\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7d3fa2514c2bf0141f5ca053c03817f382829de\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\e341204a27c903e9321c92d48499093c537eeabf\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\3257ef9d1e05bc6cc7173da2b2e2de98b8a5768b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\46ebef630933ab15679a29cffc75082da5752b6e\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+		INJECTED from F:\FFmpeg\SamychenLive\SamychenLive\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\dd094a155c232e942bdf0896eeeb04aa254293bb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\670508f056662f61d1db6e95ed7f8b1694452c7b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\90a2d3b5bd7b18b9467d1c3c00d19231dedd37a4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\cde2ef7041e9e4d03a6f6936d48ce4c290b8c337\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\1ecc8f4c6809f07dde99efe58f54c8c8af0b8fa5\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\b7d3fa2514c2bf0141f5ca053c03817f382829de\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\e341204a27c903e9321c92d48499093c537eeabf\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\3257ef9d1e05bc6cc7173da2b2e2de98b8a5768b\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\885ff37967a3f18091db794824403d27c6438506\output\AndroidManifest.xml:26:9-47

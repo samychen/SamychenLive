@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="案例一：测试环境是否配置成功"
+        android:onClick="clickConfigure"/>
+
+    <Button
+        android:id="@+id/main_bt_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="live"
+        android:text="我要直播" />
+
+    <Button
+        android:id="@+id/main_bt_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="watch"
+        android:text="看直播" />
+</LinearLayout>

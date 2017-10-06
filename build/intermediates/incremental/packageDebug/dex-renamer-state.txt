@@ -1,0 +1,7 @@
+#Wed Oct 04 19:55:46 CST 2017
+base.0=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_de45f0cffcfc610c4615dbc210a9b81da10b5368
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_dfb57b3bd121fc840b3bfbf87bd8aca2937bce21\\classes.dex
+base.1=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_dfb57b3bd121fc840b3bfbf87bd8aca2937bce21
+file.0=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_de45f0cffcfc610c4615dbc210a9b81da10b5368\\classes.dex

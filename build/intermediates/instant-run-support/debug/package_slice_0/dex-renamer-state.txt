@@ -1,0 +1,4 @@
+#Wed Oct 04 19:55:43 CST 2017
+base.0=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
+renamed.0=classes.dex
+file.0=F\:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex

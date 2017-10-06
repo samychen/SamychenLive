@@ -1,0 +1,102 @@
+
+{
+	"buildFiles" : [ "F:/FFmpeg/SamychenLive/SamychenLive/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"F:\\ProgramFile\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"avcodec-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avcodec",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavcodec.a",
+			"toolchain" : "3025965813"
+		},
+		"avfilter-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avfilter",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavfilter.a",
+			"toolchain" : "3025965813"
+		},
+		"avformat-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avformat",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavformat.a",
+			"toolchain" : "3025965813"
+		},
+		"avutil-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avutil",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libavutil.a",
+			"toolchain" : "3025965813"
+		},
+		"live-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "live",
+			"buildCommand" : "F:\\ProgramFile\\Android\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\FFmpeg\\SamychenLive\\SamychenLive\\app\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target live",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=F:/ProgramFile/Android/sdk/ndk-bundle/sysroot  -Dlive_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi-v7a\\include -isystem F:\\ProgramFile\\Android\\sdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem F:/ProgramFile/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=19 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "F:/FFmpeg/SamychenLive/SamychenLive/app/src/main/cpp/live.cpp",
+					"workingDirectory" : "F:/FFmpeg/SamychenLive/SamychenLive/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "F:/FFmpeg/SamychenLive/SamychenLive/jniLibs/armeabi-v7a/liblive.so",
+			"toolchain" : "3025965813"
+		},
+		"postproc-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "postproc",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libpostproc.a",
+			"toolchain" : "3025965813"
+		},
+		"swresample-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swresample",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libswresample.a",
+			"toolchain" : "3025965813"
+		},
+		"swscale-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swscale",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libswscale.a",
+			"toolchain" : "3025965813"
+		},
+		"x264-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "x264",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi/libx264.a",
+			"toolchain" : "3025965813"
+		}
+	},
+	"toolchains" : 
+	{
+		"3025965813" : 
+		{
+			"cCompilerExecutable" : "F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "F:/ProgramFile/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
