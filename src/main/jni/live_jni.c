@@ -85,10 +85,10 @@ int encode(AVCodecContext *pCodecCtx, AVPacket* pPkt, AVFrame *pFrame, int *got_
  * 初始化filter
  */
 int init_filters(const char *filters_descr) {
-//    /**
-//     * 注册所有AVFilter
-//     */
-//    avfilter_register_all();
+    /**
+     * 注册所有AVFilter
+     */
+    avfilter_register_all();
     char args[512];
     int ret = 0;
     //参考雷神最简单的基于FFmpeg的AVFilter例子 http://blog.csdn.net/leixiaohua1020/article/details/29368911
@@ -112,20 +112,17 @@ int init_filters(const char *filters_descr) {
              src_width, src_height, pCodecCtx->pix_fmt,
              pCodecCtx->time_base.num, pCodecCtx->time_base.den,
              pCodecCtx->sample_aspect_ratio.num, pCodecCtx->sample_aspect_ratio.den);
-
     //创建并向FilterGraph中添加一个Filter
     ret = avfilter_graph_create_filter(&buffersrc_ctx, buffersrc, "in", args, NULL, filter_graph);
     if (ret < 0) {
         LOGE("Cannot create buffer source\n");
         goto end;
     }
-
     ret = avfilter_graph_create_filter(&buffersink_ctx, buffersink, "out", NULL, NULL, filter_graph);
     if (ret < 0) {
         LOGE("Cannot create buffer sink\n");
         goto end;
     }
-
     ret = av_opt_set_int_list(buffersink_ctx, "pix_fmts", pix_fmts, AV_PIX_FMT_NONE, AV_OPT_SEARCH_CHILDREN);
     if (ret < 0) {
         LOGE("Cannot set output pixel format\n");
@@ -175,7 +172,7 @@ JNIEXPORT jint JNICALL
 Java_com_gracefulengineer_samychen_LiveActivity_streamerInit(JNIEnv *env, jobject instance,
                                                              jint width, jint height) {
     int ret = 0;
-    const char *address = "rtmp://192.168.0.114/oflaDemo/test";
+    const char *address = "rtmp://192.168.31.101/oflaDemo/test";
     src_width = width;
     src_height = height;
     //yuv数据格式里面的  y的大小（占用的空间）
@@ -208,7 +205,7 @@ Java_com_gracefulengineer_samychen_LiveActivity_streamerInit(JNIEnv *env, jobjec
     //编码配置参数说明参考 http://blog.csdn.net/chance_yin/article/details/16335625
     //帧率的基本单位，我们用分数来表示，用分数来表示的原因是，有很多视频的帧率是带小数的eg：NTSC 使用的帧率是29.97
     pCodecCtx->time_base.num = 1;//分子
-    pCodecCtx->time_base.den = 30;//分母，设置帧率
+    pCodecCtx->time_base.den = 30;//分母，设置帧率,要避免动作不流畅的最低是30,对下文设置pts有影响http://blog.csdn.net/dancing_night/article/details/45972361
     pCodecCtx->bit_rate = 800000;//设置采样参数，即比特率,采样码率越大，视频大小越大
     pCodecCtx->gop_size = 300;//每300帧插入1个I帧，I帧越少，视频越小
     //一些格式需要视频流数据头分开
@@ -262,6 +259,14 @@ Java_com_gracefulengineer_samychen_LiveActivity_streamerInit(JNIEnv *env, jobjec
         LOGE("Could not open output URL %s", address);
         return -1;
     }
+//    int result = avformat_open_input(ofmt_ctx, address,NULL, NULL);
+//    if (result != 0)
+//    {
+//        char szError[256];
+//        av_strerror(result, szError, 256);
+//        LOGE("%s%d",szError,result);
+//        LOGE("Call avformat_open_input function failed!\n");
+//    }
     //写输出流头部
     ret = avformat_write_header(ofmt_ctx, NULL);
     if(ret < 0) {
@@ -310,7 +315,7 @@ Java_com_gracefulengineer_samychen_LiveActivity_streamerFlush(JNIEnv *env, jobje
             break;
         }
         LOGI("Encode 1 frame size:%d\n", packet.size);
-        //timebase参考：http://blog.csdn.net/vansbelove/article/details/53036602 http://blog.csdn.net/vansbelove/article/details/52996654
+        //timebase参考：http://blog.csdn.net/dancing_night/article/details/52101313 http://blog.csdn.net/vansbelove/article/details/53036602 http://blog.csdn.net/vansbelove/article/details/52996654
         //AVRarional time_base = {1,1,AV_TIME_BASE};
         //int64_t  timestamp = time/ time_base;  //内部时间戳
         //int64_t time = timestamp * time_base;//实际时间(秒)
@@ -396,11 +401,9 @@ Java_com_gracefulengineer_samychen_LiveActivity_streamerHandle(JNIEnv *env, jobj
     //那么要变成time_base为{1, 1000000}刻度时的pts就要进行转换(20 * 1 / 30) / (1 / 1000000)
     //而且解码器那里有一个time_base，编码器又有自己的time_base，所以当进行操作后，需要进行一个time_base的转换才行
     yuv_frame->pts = timestamp * 30 / AV_TIME_BASE;//30是编码器的帧率
-
     pkt.data = NULL;
     pkt.size = 0;
     av_init_packet(&pkt);
-
     if (filterInitResult >= 0) {
         ret = 0;
         //向FilterGraph中加入一个AVFrame
@@ -426,7 +429,6 @@ Java_com_gracefulengineer_samychen_LiveActivity_streamerHandle(JNIEnv *env, jobj
         //进行编码
         //ret = encode(pCodecCtx, &pkt, yuv_frame, &got_packet);
     }
-
     if(ret < 0) {
         resultCode = -1;
         LOGE("Encode error\n");
